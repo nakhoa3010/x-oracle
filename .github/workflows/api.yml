@@ -38,6 +38,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
           repository: "nakhoa3010/helm-charts"
           path: helm-charts
