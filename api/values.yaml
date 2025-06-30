@@ -13,6 +13,12 @@ terminationGracePeriodSeconds: 60
 extraEnvs: []
 envFrom: []
 
+secretMounts:
+  - name: env
+    secretName: api-secret
+    path: /src/.env
+    subPath: .env
+
 podAnnotations: {}
 
 livenessProbe: []
